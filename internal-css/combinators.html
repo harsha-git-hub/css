@@ -1,0 +1,96 @@
+<html>
+	<head>
+	<title>combinators</title>
+		<style>
+			#div1 p{
+					background-color:yellow;
+					border:5px solid black;
+					outline:2px solid blue;
+					box-shadow:3px 5px red;
+					
+					
+				}
+				#div2>a{
+					text-decoration:none;
+					font-size:18px;
+					font-weight:bold;
+					dispaly:inline-block;
+					padding:20px;
+					height:30px;
+					width:100px;
+					border:2px solid blue;
+					background-color:blue;
+					color:white;
+					line-height:30px;
+					border-radius:10px;
+					text-align:center;
+					
+					}
+					#div2>a:hover{
+						background-color:red;
+						color:yellow;
+						}
+					#div3+p{
+					background-color:skyblue;
+					border:5px solid black;
+					outline:2px solid blue;
+					box-shadow:3px 5px red;
+							}
+				#div4~p{
+					background-color:pink;
+					border:5px solid black;
+					outline:2px solid blue;
+					box-shadow:3px 5px red;
+							}
+				</style>
+	</head>
+	<body>
+	
+	<h3>descendant selectors space</h3>
+	<div id="div1">
+		<p>this is para1</p>
+		<p>this is para2</p>
+		<p>this is para3</p>
+		<p>this is para4</p>
+		<a href="#">service</a>
+	
+	
+	</div>
+	<hr>
+	<h3>chlid selector</h3>
+	<div id="div2">
+			<a href="#">home</a>
+			<a href="#">about us</a>
+			<a href="#">contact</a>
+	</div>
+	<br>
+	<hr>
+	<h3>ajacent sibling selector +</h3>
+	<div id="div3">
+		<p> this is the para inside div3</p>
+		<p> this is the para</p>
+		<p> this is the para</p>
+		<p> this is the para</p>
+	</div>
+	<p>this is not inside div3 but very adjecent to div3</p>
+	<p>this is not inside div3</p>
+	<p>this is not inside div3</p>
+	<p>this is not inside div3</p>
+     
+	 
+	 <h3> general sibling selector~</h3>
+	<div id="div4">
+		<p> this is the para inside div3</p>
+		<p> this is the para</p>
+		<p> this is the para</p>
+		<p> this is the para</p>
+	</div>
+	<p>this is not inside div3 but very adjecent to div4</p>
+	<p>this is not inside div3 not very adjecnt to div4</p>
+	<p>this is not inside div3 not very adjecnt to div4</p>
+	<p>this is not inside div3 not very adjecnt to div4</p>
+     
+	</body>
+	
+
+</html>

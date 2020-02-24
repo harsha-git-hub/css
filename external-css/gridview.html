@@ -1,0 +1,139 @@
+ <html>
+	<head>
+		<title>gridview,transistion</title>
+		<style>
+		#div1{
+			height:300px;
+			background:linear-gradient(-40deg,green,blue,red,skyblue);
+			border:12px solid blue;
+			line-height:30px;
+			color:white;
+			font-size:16px;
+			text-align:justify;
+			column-count:3;
+			column-rule:2px solid white;
+			colunm-gap:25px;
+			-webkit-transition:box-shoadow 3s;
+			transition:box-shoadow 3s;
+		}
+		#div1:hover{
+					box-shadow:5px 10px skyblue;
+					}
+		
+		#div2{
+				height:200px;
+				width:200px;
+				border:2px solid green;
+				position:relative;
+				
+		}
+		#div3{
+				height:20px;
+				width:200px;
+				border:2px solid green;
+				position:absolute;
+				background-color:yellow;
+				line-height:75px;
+				text-align:center;
+				font-weight:bold;
+				color:white;
+				-webkit-transition:height 3s,color 3s;
+				transistion:height 3s,color 3s;
+				
+				
+		
+		}
+		#div2:hover #div3{
+		         height:200px;
+				 color:black;
+		}
+		
+		#div4{
+			height:100px;
+			width:100px;
+			position:relative;
+			background-color:yellow;
+			border:2px solid black;
+			border-radius:100%;
+			top:10px;
+			-webkit-animation:mydiv 1s infinite;
+			animation:mydiv 1s infinite;
+			
+		}
+		@keyframes mydiv{
+				from{background-color:yellow;}
+				to{background-color:red;}
+			}
+			@-webkit-keyframes mydiv{
+				from{background-color:yellow;}
+				to{background-color:red;}
+			}
+			#div5{
+			height:100px;
+			width:100px;
+			position:relative;
+			background-color:blue;
+			border:2px solid black;
+			border-radius:100%;
+			top:10px;
+			-webkit-animation:mydiv1 3s infinite;
+			animation:mydiv1 3s infinite;
+			
+		}
+		@keyframes mydiv1
+		{
+				0%{background-color:yellow;top:100px;left:0px;border:2px solid blue;border-radius:10%}
+				30%{background-color:violet;top:100px;left:100px;border:5px solid pink;border-radius:30%}
+				60%{background-color:red;top:200px;left:200px;border:10px solid yellow;border-radius:50%}
+				100%{background-color:red;top:0px;left:0px;border:2px solid black;border-radius:100%}
+		}
+		@-webkit-keyframes mydiv1
+		{
+				0%{background-color:yellow;top:100px;left:0px;border:2px solid blue;border-radius:10%}
+				30%{background-color:violet;top:100px;left:100px;border:5px solid pink;border-radius:30%}
+				60%{background-color:red;top:200px;left:200px;border:10px solid yellow;border-radius:50%}
+				100%{background-color:red;top:0px;left:0px;border:2px solid black;border-radius:100%}
+		}
+		</style>
+	</head>
+	<body>
+	
+	<div id="div1">
+	<p>
+	Homes of the 21st century will become more and more self- controlled and automated 
+	due to the comfort it provides, especially when employed in a private home.
+	A home automation system is a means that allow users to control electric appliances
+	</p>
+	</div>
+	<div id="div2">
+			<div id="div3">hi sai</div>
+	</div>
+	
+	
+	
+	<div id="div4">
+	
+	
+	
+	</div>
+	<div id="div5">
+	
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	</body>
+ 
+ </html>

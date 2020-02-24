@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>positions:absolute</title> <!----- relative is a parent of fixed and absolute and absolute can be placed anywhere inside relative------>
+		<style>
+			#div1{
+					height:200px;
+					width:80%;
+					background-color:yellow;
+					border:5px solid red;
+					position:relative;
+				}
+				#div11{
+						height:50px;
+						width:150px;
+						background-color:red;
+						color:white;
+						position:absolute;/* when absolute position is used we cant use float to move it*/
+						left:75%;/* right:0; and bottom:0; also can be used here insted of left and top*/
+						top:150px;
+						text-align:center;
+						line-height:50px;
+						font-weight:bold;
+						text-transform:uppercase;
+						}
+		
+		</style>
+	
+	
+	</head>
+	<body>
+		<div id="div1">
+			<div id  ="div11">content us</div>
+		
+		</div>
+	
+	
+	</body>
+</html>

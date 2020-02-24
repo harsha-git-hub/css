@@ -1,0 +1,21 @@
+#exercise
+{
+	width: 300px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+table
+{
+	height: 200px;
+}
+
+th,td
+{
+	height: 50px;
+}
+
+#city
+{
+	width: 170px;
+}

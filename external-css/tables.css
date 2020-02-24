@@ -1,0 +1,29 @@
+table{
+		width:100%;
+		border:2px solid gray;
+		border-collapse:collapse;
+	
+}
+th,td{
+		height:30px;
+		padding:20px;
+		/*vertical-align:middle*/
+		text-align:center;
+		border-bottom:2px solid gray;
+}
+th{
+	background-color:lightgreen;
+	color:white;
+}
+tr:nth-child(even){
+				background-color:red;
+}
+tr:nth-child(odd){
+				background-color:blue;
+}
+tr:hover{
+		background-color:white;
+}
+#div1{
+	overflow-x:auto;
+}

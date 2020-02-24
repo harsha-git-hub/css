@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<title>selecting by attribute </title>	
+	    <style>
+				button[type='button']
+				{
+					height:50px;
+					width:150px;
+					border:5px solid pink;
+					background-color:blue;
+					color:white;
+					text-align:center;
+					font-weight:bold;
+					border-radius:15px;
+				}
+			 button[type='submit']
+				{
+					height:50px;
+					width:150px;
+					border:5px solid red;
+					background-color:yellow;
+					color:white;
+					text-align:center;
+					font-weight:bold;
+					border-radius:15px;
+				}
+				input[type='text']{
+				     height:50px;
+					 width:150px;
+					 border:2px solid green;
+					 border-radius:10px;
+					 margin-top:20px;
+			   }
+			   a[ target="_blank"]{
+			       background-color:yellow;
+				   display:inline-block;
+				  } 
+
+				  [class$=test]{
+				  background-color:yellow;
+				  height:30px;
+				  width:100px;
+				  border:2px solid red;
+				}		
+				  [class*=th]{
+				  background-color:blue;
+				  height:30px;
+				  width:100px;
+				  border:2px solid red;
+				  color:white;
+				  }
+				  [class|="top"]{
+					background-color:green;
+					color:white;
+					height:50px;
+					margin:10px;
+				  }
+				  [class^="main"]{
+					background-color:red;
+					color:white;
+					height:50px;
+					margin:10px;
+				  }
+				  
+				  
+		</style>
+	</head>
+	<body>
+		<button type="button"> click me</button>
+		<button type="submit"> click me</button><hr>
+		<input  type="text" placeholder="Enter 1st number"><br>
+		<input  type="text" placeholder="Enter 2st number"><br>
+		<input  type="text" placeholder="Enter 3st number"><br>
+		<input  type="text" placeholder="Enter 4st number"><br>
+		<a href="#" target="_blank"> go to .......</a>
+		<a href="#" > go to .......</a>
+	  
+	  <hr>
+	  
+	  <h3> acccesssing the element whose class name end with specific word test we use $</h3>
+	 <div class="first-test">this is 1st div</div>
+	 <div  class="second-test">this is 2nd div</div>
+
+	 <h3> acccesssing the element whose class name end with specific with contain thi we use * </h3>
+	 <div class="third">this is 3rd div</div>
+	 <div class="my-test">this is 4th div</div>
+	 
+	 <h3> acceesing the element whose attribute value starts with the specified value </h3>
+	 
+	 <div class="top-text"> this is the div whose class name starts with top word is the value</div>
+	 <div class="top-head"> this is the div whose class name starts with top word is the value</div>
+	 <div class="top-head"> this is the div whose class name starts with top word is the value</div>
+	 
+	 <hr>
+	 
+	 <h3> acccesssing the element whose class name contains with specific word at the begging</h3>
+	 <div class ="main-text">this is the div whose class name contains main at the beginning</div>
+	 <div class ="main-top">this is the div whose class name contains main at the beginning</div>
+	 <div class ="mainboottom">this is the div whose class name contains main at the beginning</div>
+	 
+	</body>
+</html>

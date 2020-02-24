@@ -1,0 +1,113 @@
+<html>
+		
+	<head>
+	    <title> pseudo elements</title>
+		<style>
+			p::first-line
+			{
+			background-color:pink;
+			color:blue;
+			}
+			h1::first-letter
+			{
+					color:red;
+					font size:50px;
+			}
+			div::before
+			{
+				   content:url('money.gif')
+			}
+			#div1::after{
+					content:url('nature.jpeg')
+					
+					}
+		
+		     .para::selection{
+			background-color:yellow;
+			color:red;
+			}
+			.para::-moz-selection
+			 {
+			 background-color:orange;
+			 color:red;
+			}
+		</style>
+	</head>
+	<body>
+			<h3>Pseudo elements are used to style the specific portion  of elements
+			    The syntax is as follow
+			</h3>
+		
+		<pre>
+				elementname::pseudo elements
+				{
+				property:value;
+				}
+		</pre>
+		
+		<hr>
+		
+		<h4> the followiing are the pseudo elements</h4>
+		
+		<dl>
+			<dt>:: first-line </dt>
+			<dd> this will provide the style to the first letter</dd>
+		</dl>
+
+		<hr>
+				<p>this is the paragraph for which pseudo elements :: first-line is applied
+				this is the paragraph for which pseudo elements :: first-line is applied
+				
+				</p>
+		<hr>
+		
+		<dl>
+			<dt>:: first letter</dt>
+			<dd> this will provide the style to the first letter</dd>
+		</dl>
+		<hr>
+		 
+		
+		  <pre> example</pre>
+				<h1>
+				 the of india
+				 
+				</h1>
+		 
+		<dl>
+			<dt>:: before </dt>
+			<dd> this will place the image before the particular element</dd>
+		</dl>
+		
+		<pre>example</pre>
+		
+		<div> a simley image is palced before me</div>
+		
+		<hr>
+		
+		<dl>
+			<dt>:: after </dt>
+			<dd> this will place the image before the particular element</dd>
+		</dl>
+
+		<pre>example</pre>
+	
+    	<hr>
+			<h5 id="div1"> image will be placed after me</h5>
+		<hr>
+			
+		<dl>
+			<dt>::selection (or) ::-moz-selection(for firefox)  </dt>
+			<dd> this will provide the stlye</dd>
+		</dl>
+	
+	<hr>
+	
+	<p class="para">
+				this is the paragraphthis is the paragraphthisis the paragraph
+	
+	
+	</p>
+	</body>
+
+</html>

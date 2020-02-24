@@ -1,0 +1,46 @@
+*{
+	margin:opx;
+	padding:0px;
+	
+}
+#header{
+		height:45px;
+		background:linear-gradient(-40deg,green,blue,red,skyblue);
+}
+
+div>span{
+		float:right;
+		margin:5px;
+		color:linear-gradient(255,255,255,0);
+		line-height:25px;
+		text-shadow:2px 2px red;
+}
+#sidebar{
+		min-height:100%;
+		width:25p%;
+		background:red;
+		float:left;
+}
+ul li{
+	  display:block;
+	  height:50px;
+	  width:120px;
+	  padding:25px;
+	  border-bottom:2px solid blue;
+}
+li>a{
+		text-decoration:none;
+		color:blue;
+		font-size:18px;
+		font-weight:bold;
+		text-transform:uppercase;
+}
+li:hoever{
+		background-color:red;
+			color:blue;
+}
+#mainblock{
+		background-color:pink;
+		min-height:100%;
+		
+}

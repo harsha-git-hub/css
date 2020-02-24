@@ -1,0 +1,78 @@
+ html is markup language, it has collections of pre-defined tags.
+ but the pre-defined tags has limited property and values.
+
+css is called style sheet, it has collections of property and values
+
+well design webpage =html(tags)+css (property &values)
+-------------------------------------------------------
+ height(3 methods)
+    height:100px;  it is fixed
+	min-height:100px min 100px is fixed, if contents are more it will increse
+    height :auto fully depend on contains
+   
+   width(4 methods)
+	width:px; it is fixed
+	width:% it depend on scren width
+	-----------in internal css------>
+	min-width:px/%
+	max-width:px/%
+	
+ background(5 method)
+	
+ float:left/right(to convert from block level element to inline element)
+ ------------------------
+   Dispaly-line:to covert from block to inline 
+   dispaly-block:to convert from inline to block
+------------------------------------------------------
+ margin-> to apply gap  gap oustside of container from respective side
+		margin:auto;it align the container into middle of present area 
+		margin:20px;it apply gap of 20px from all side 
+		margin-top:20px
+		margin-bottom:20px
+		margin-right:20px
+		margin-left:20px
+		----------------------------------------------------
+	padding-> to apply gap inside of container
+	    padding:20px; all side gap of 20px;
+	    padding-left:20px;  gap from left side
+	    padding-right:20px;  gap from right side
+	    padding-bottom:20px;  gap from bottom side
+-----------------------------------------------------------------
+	    border :size type color;
+		border : 5px solid green; it apply border froom all sides
+		border-left :5px solid green; only apply from 0
+		border-right :5px solid green; only apply  from righ
+		border-top :5px solid green; only apply  from top
+		border-bottom :5px solid green; only  apply  bottom side
+	-----------------------------------------------------------------
+	clear:both; use to apply a separated betwwen higher index and lower index 
+				note: use after end of float section.
+---------------------------------------------------------------------
+		problem of inline css :
+		1. it is one to one (one html tag, one set of css code)
+		2. if it is one to one them code duplicate will happen
+		3.if code is duplicate the file weight will increse 
+		4.if the file is heavy then page loading time will inccrease and page will be slow
+		5. if page is slow the user experinces may be bad
+		6.if file is heavy then more intenet data is requried
+        7.modification will be complex
+		8. file storage requered more sapce
+		9. digital marketing (page in google search) will never happen 
+	advantages:
+      easy to understand, wirte read 
+	 -----------------------------------------------
+	 internal css:
+	   it is one to many,to make it 1 to many following methods are given
+		1. css by tag name (very less)
+		2. css by id  (avg in use)
+		3. css by class  (more in use)
+		4. css by tag group (very less)
+		5. css by parent and child tags (very less , page will be slow)
+	--------------------------------------------------------------------------
+	id=#idname
+	class=.classname
+	input[attribute=""]
+	[class$=""]end
+	[class*=""]contains a values
+	[class|=""]starts with the specific word
+	[class^=""]class contains a value at begging
